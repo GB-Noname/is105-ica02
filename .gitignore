@@ -2,14 +2,10 @@
 *.o
 *.a
 *.so
-*.xml
-*.name
-*.iml
 
 # Folders
 _obj
 _test
-/.idea/
 
 # Architecture specific extensions/prefixes
 *.[568vq]
@@ -26,4 +22,3 @@ _testmain.go
 *.exe
 *.test
 *.prof
-*.xml
