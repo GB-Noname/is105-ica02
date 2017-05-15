@@ -1,6 +1,6 @@
 package main
 
-import "./bring"
+import "./boring"
 
 func main() {
 	//Boring01()

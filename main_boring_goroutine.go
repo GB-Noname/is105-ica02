@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"./bring"
+	"./boring"
 )
 
 // Kode fra Rob Pike https://talks.golang.org/2012/concurrency.slide#20
