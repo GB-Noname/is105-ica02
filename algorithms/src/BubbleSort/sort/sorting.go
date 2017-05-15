@@ -1,8 +1,24 @@
-package algorithms
+package sorting
+
+import "fmt"
 
 // Les https://en.wikipedia.org/wiki/Bubble_sort
 func Bubble_sort_modified(list []int) {
-	// Deres kode her
+	n := len(list)
+ swapped := true
+ for swapped {
+		 swapped = false
+		 for i := 1; i < n-1; i++ {
+				 if list[i-1] > list[i] {
+						 fmt.Println("Swapping")
+						 // swap values using Go's tuple assignment
+						 list[i], list[i-1] = list[i-1], list[i]
+						 swapped = true
+				 }
+		 }
+ }
+ fmt.Println(list)
+
 }
 
 // Implementering av Bubble_sort algoritmen
