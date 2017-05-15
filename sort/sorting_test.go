@@ -1,11 +1,11 @@
-package algorithms
+package sorting
 
 import (
 	"math/rand"
 	"reflect"
 	"testing"
 	"time"
-	"./sort"
+	"./"
 )
 
 // https://golang.org/doc/effective_go.html#init

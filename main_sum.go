@@ -12,6 +12,7 @@ func main() {
 	for finish == false {
 
 		var typeVal string
+		fmt.Println("Valid types are: uint32, int32, int64 and float64")
 		fmt.Println("Enter the valid type to calculate with:>")
 		fmt.Scan(&typeVal)
 		calcType := string(typeVal)
