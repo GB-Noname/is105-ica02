@@ -1,7 +1,7 @@
 package main
 
 import "testing"
-import "./addition"
+
 
 // Check https://golang.org/ref/spec#Numeric_types and stress the limits!
 
@@ -23,7 +23,7 @@ var sum_tests_int8 = []struct {
 
 func TestSumInt8(t *testing.T) {
 	for _, v := range sum_tests_int8 {
-		if val := addition.SumInt8(v.n1, v.n2); val != v.expected {
+		if val := SumInt8(v.n1, v.n2); val != v.expected {
 			t.Errorf("Sum(%d, %d) returned %d, expected %d", v.n1, v.n2, val, v.expected)
 		}
 	}
@@ -40,7 +40,7 @@ var sum_tests_uint32 = []struct {
 }
 func TestSumUint32(t *testing.T) {
 	for _, v := range sum_tests_uint32 {
-		if val := addition.SumUint32(v.n132, v.n232); val != v.expected32 {
+		if val := SumUint32(v.n132, v.n232); val != v.expected32 {
 			t.Errorf("Sum(%d, %d) returned %d, expected %d", v.n132, v.n232, val, v.expected32)
 		}
 	}
@@ -57,7 +57,7 @@ var sum_tests_int32 = []struct {
 }
 func TestSumInt32(t *testing.T) {
 	for _, v := range sum_tests_int32 {
-		if val := addition.SumInt32(v.n1i32, v.n2i32); val != v.expectedi32 {
+		if val := SumInt32(v.n1i32, v.n2i32); val != v.expectedi32 {
 			t.Errorf("Sum(%d, %d) returned %d, expected %d", v.n1i32, v.n2i32, val, v.expectedi32)
 		}
 	}
@@ -74,7 +74,7 @@ var sum_tests_int64 = []struct {
 }
 func TestSumInt64(t *testing.T) {
 	for _, v := range sum_tests_int64 {
-		if val := addition.SumInt64(v.n1i64, v.n2i64); val != v.expectedi64 {
+		if val := SumInt64(v.n1i64, v.n2i64); val != v.expectedi64 {
 			t.Errorf("Sum(%d, %d) returned %d, expected %d", v.n1i64, v.n2i64, val, v.expectedi64)
 		}
 	}
@@ -91,25 +91,10 @@ var sum_tests_float64 = []struct {
 }
 func TestSumFloat64(t *testing.T) {
 	for _, v := range sum_tests_float64 {
-		if val := addition.SumFloat64(v.n1f64, v.n2f64); val != v.expectedf64 {
+		if val := SumFloat64(v.n1f64, v.n2f64); val != v.expectedf64 {
 			t.Errorf("Sum(%d, %d) returned %d, expected %d", v.n1f64, v.n2f64, val, v.expectedf64)
 		}
 	}
 }
 
-var sum_input = []struct {
-	inp1       int64
-	inp2       int64
-	expectedInp int64
-}{
-	{1, 2, 3},
-	{12000, 10000, 22000},
-	{9223372036854775807, 1, 9223372036854775807},
-}
-func TestSumInt64(t *testing.T) {
-	for _, v := range sum_tests_int64 {
-		if val := addition.SumInt64(v.inp1, v.inp2); val != v.expectedInp {
-			t.Errorf("Sum(%d, %d) returned %d, expected %d", v.inp1, v.inp2, val, v.expectedInp)
-		}
-	}
-}
+
