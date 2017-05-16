@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 	"time"
-	"./"
+
 )
 
 // https://golang.org/doc/effective_go.html#init
@@ -39,17 +39,17 @@ func benchmarkBSort(i int, b *testing.B) {
 		b.StopTimer()
 		values := perm(i)
 		b.StartTimer()
-		sorting.Bubble_sort(values)
+		Bubble_sort(values)
 
 	}
 }
 
-func benchmarkBSortMod(i int, b *testing.B) {
+func benchmarkBSortModified(i int, b *testing.B) {
 	for j := 0; j < b.N; j++ {
 		b.StopTimer()
 		values := perm(i)
 		b.StartTimer()
-		sorting.Bubble_sort_modified(values)
+		Bubble_sort_modified(values)
 
 	}
 }
@@ -59,7 +59,7 @@ func TestQSort(t *testing.T) {
 	values := []int{9, 1, 20, 3, 6, 7}
 	expected := []int{1, 3, 6, 7, 9, 20}
 
-	sorting.QSort(values)
+	QSort(values)
 
 	if !reflect.DeepEqual(values, expected) {
 		t.Fatalf("expected %d, actual is %d", 1, values[0])
@@ -83,6 +83,6 @@ func benchmarkQSort(i int, b *testing.B) {
 		b.StopTimer()
 		values := perm(i)
 		b.StartTimer()
-		sorting.QSort(values)
+		QSort(values)
 	}
 }
