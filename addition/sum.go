@@ -1,4 +1,4 @@
-package main
+package addition
 
 func SumInt8(a, b int8) int8 {
 	return a + b

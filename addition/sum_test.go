@@ -1,6 +1,7 @@
-package main
+package addition
 
-import "testing"
+import ("testing"
+)
 
 
 // Check https://golang.org/ref/spec#Numeric_types and stress the limits!
