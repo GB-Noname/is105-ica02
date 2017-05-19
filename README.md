@@ -1,5 +1,14 @@
 # is105-ica02
 
+#### Bidragsytere:
+
+På contributors i Github står det oppført fire personer. 
+Resten har også bidratt, vi har jobbet i team. 
+ampede15 har jobbet med MortenSchibbye,
+Fosso har jobbet med arnebw13,
+CastleDev har jobbet med adrianlo,
+asalmu16 har jobbet alene. 
+
 
 ### Oppgave 2 
 https://github.com/GB-Noname/is105-ica02
