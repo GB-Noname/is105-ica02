@@ -8,7 +8,6 @@ import (
 
 )
 
-// https://golang.org/doc/effective_go.html#init
 func init() {
 	seed := time.Now().Unix()
 	rand.Seed(seed)
@@ -43,6 +42,15 @@ func benchmarkBSort(i int, b *testing.B) {
 
 	}
 }
+
+func BenchmarkBSortModified100(b *testing.B) {
+	benchmarkBSortModified(100, b)}
+
+func BenchmarkBSortModified1000(b *testing.B) {
+	benchmarkBSortModified(1000, b)}
+
+func BenchmarkBSortModified10000(b *testing.B) {
+	benchmarkBSortModified(10000, b)}
 
 func benchmarkBSortModified(i int, b *testing.B) {
 	for j := 0; j < b.N; j++ {
