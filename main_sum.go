@@ -7,8 +7,6 @@ import (
 
 func main() {
 	finish := false
-	//finalType := ""
-	//type finalType int
 	for finish == false {
 
 		var typeVal string
@@ -19,10 +17,6 @@ func main() {
 		fmt.Println("Type to be calculated with is: ", typeVal)
 
 		if calcType == "uint32" {
-			//finalType := uint32(0)
-			//type finalType uint32
-			//value := finalType(4294967295)
-			//fmt.Println(value)
 			var inputVal int
 			inputVal2 := 0
 			fmt.Println("Enter the first and second number. Press enter after each number")
@@ -35,7 +29,6 @@ func main() {
 			fmt.Println("The sum is: ", addition.SumUint32(val1, val2))
 		}
 		if calcType == "int32" {
-			//finalType := int32(0)
 			var inputVal int
 			inputVal2 := 0
 			fmt.Println("Enter the first and second number. Press enter after each number")
@@ -48,8 +41,6 @@ func main() {
 			fmt.Println("The sum is: ", addition.SumInt32(val1, val2))
 		}
 		if calcType == "int64" {
-			//finalType := int64(0)
-			//type finalType int64
 			var inputVal int
 			inputVal2 := 0
 			fmt.Println("Enter the first and second number. Press enter after each number")
@@ -62,8 +53,6 @@ func main() {
 			fmt.Println("The sum is: ", addition.SumInt64(val1, val2))
 		}
 		if calcType == "float64" {
-			//finalType := float64(0)
-			// type finalType float64
 			var inputVal int
 			inputVal2 := 0
 			fmt.Println("Enter the first and second number. Press enter after each number")
