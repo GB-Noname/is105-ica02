@@ -33,12 +33,14 @@ boring_main.go
 main_boring.goroutine.go
 
 
-Kode-kommentarer:
+#### Kode-kommentarer:
 
 Hello.go
+
 I denne filen ligger det en func som heter main. Denne funksjonen gjør en print av teksten i funksjonen. 
 
 Sum.go
+
 Denne filen inneholder fem funksjoner. Alle returnerer a+b, som er summen av tallene som blir skrevet inn i terminalen. 
 Det er fem ulike funksjoner fordi programmet skal kunne opperere med forskjellige typer, og de er som følger:int8,
 float64, uint32, int32 og int64. 
@@ -46,6 +48,7 @@ Int8 var ikke med i oppgaven, men vi tok dette med fordi vi ville bruke den i te
 samt vi ville kunne forstå rangen bedre med lave tall før vi gikk videre til de større tallene. 
 
 Main_sum.go
+
 Her finner vi mainen til sum.go. Denne har en func som heter main, som kjører programmet. 
 I starten av funksjonen har vi variablen "finish", som blir brukt som en boolean i en for-loop. Denne loopen holder programmet kjørende,
 helt til den brytes, og programmet avsluttes. Etter det blir det deklarert en variabel, typeVal, som er en string. Den bestemmer hvilken 
@@ -58,6 +61,7 @@ Når programmet har lagt sammen to tall kommer det en print som forklarer hvordan
 for loopen brytes, og programmet avsluttes. Hvis man skriver "no" kan man fortsette med å legge sammen tall. 
 
 sum_test.go
+
 Et testprogram som tester at kalkulatoren "sum" fungerer som den skal.
 Programmet tester med de fem ulike typene. En funksjon for hver type, med en tilhørende struct. 
 I structen er det tre variabler, to for tallene som blir lagt sammen, og én for tallet som er forventet å få som svar. 
@@ -67,6 +71,7 @@ Så kommer en if statement som sier at hvis for eksempel if val:= SumInt8 ikke er
 som sier hva som ble kalkulert, og hva som var forventet. 
 
 boring.go
+
 Programmet inneholder to funksjoner, Boring01 og Boring10.
 Boring01 har "msg" som parameter. Boring01 har en for loop som ikke har noen break. Variablen i begynner på null, og så teller den oppover. 
 Funksjonen printen en melding eller "msg", og variablen i som stiger med ett nummer for hver linje som blir printet. 
@@ -80,10 +85,12 @@ C Channel venter på svar fra sprintf.
 
 
 Boring_main.go
+
 Dette er den ene mainen til boring.go. 
 Dette programmet kjører boring.go, og funksjonen boring01 blir kalt på fra boring.go. 
 
 main_boring_goroutine.go
+
 Dette er den andre mainen til boring.go. 
 Funksjonen boring10 blir kalt på fra boring.go. 
 En channel blir laget og har variabelen c. 
@@ -93,6 +100,7 @@ Boring10 kombinerer teksten som vi sender inn med integeren i loopen på boring10
 
 
 sorting.go
+
 Et program som sorterer integers i stigende rekkefølge. 
 func bubble_sort_modified har en liste av integers som parameter. 
 Variabelen "n" er lik lengde på listen. 
@@ -122,6 +130,7 @@ if pivot er større enn values[j], og values[i], values[j] er lik values [j], val
 Den kjører en loop til loopen er komplett, og når den er komplett returnerer den blankt. 
 
 sorting_test.go
+
 Et program som kjører benchmark tester og test på funksjoner fra sorting.go.  
 
  
