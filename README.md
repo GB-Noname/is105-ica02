@@ -1,5 +1,15 @@
 # is105-ica02
 
+#### Githubnavn
+
+CastleDev = Tor Borgen
+asalmu16 = Ali Saad Jawad Al Musawi
+arnebw13 = Arne Bastian Wiik
+ampede15 = Ann Margrethe Ly Pedersen
+Fosso = Brage Fosso
+MortenSchibbye = Morten Schibbye
+adrianlo = Adrian Lorentzen   
+
 #### Bidragsytere:
 
 På contributors i Github står det oppført fire personer. 
